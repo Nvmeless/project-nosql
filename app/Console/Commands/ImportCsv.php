@@ -33,8 +33,9 @@ class ImportCsv extends Command
         $file = fopen($path, 'r');
         $header = fgetcsv($file); // Lire la première ligne (les en-têtes)
 
-        $client = new Client('host.docker.internal:7700/'); // Remplacez l'URL par l'URL de votre instance MeiliSearch
+        $client = new Client('host.docker.internal:7700/');
         $index = $client->index('contact');
+        $index->deleteAllDocuments();
 
         while (($data = fgetcsv($file)) !== false) {
             $record = array_combine($header, $data);
