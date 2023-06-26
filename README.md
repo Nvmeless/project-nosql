@@ -57,7 +57,7 @@ Open the ubuntu shell and run the following command :
 
 You need an SSH key to clone the project from github
 
-If your key isn't set, pen the ubuntu shell and run the following commands :
+If your key isn't set, open the ubuntu shell and run the following commands :
 
 ```bash
     cd 
