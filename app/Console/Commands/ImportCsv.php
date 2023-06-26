@@ -28,7 +28,6 @@ class ImportCsv extends Command
      */
     public function handle()
     {
-        Log::info('ImportCsv command started');
         $path = public_path('contacts.csv');
         $file = fopen($path, 'r');
         $header = fgetcsv($file); // Lire la première ligne (les en-têtes)
