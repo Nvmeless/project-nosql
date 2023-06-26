@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Meilisearch\Client;
-use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {

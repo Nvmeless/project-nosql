@@ -7,6 +7,6 @@
         <title>Laravel</title>
     </head>
     <body >
-        {{ $mostFrequentPhoneNumber }}
+        Most used phone number : {{ $mostFrequentPhoneNumber }}
     </body>
 </html>
